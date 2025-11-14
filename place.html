@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Uganda</title>
+  <link rel="stylesheet" href="styles/styles.css
+    <link rel=" preload" as="image" href="images/hero-small.webp">
+  <!-- defer main script -->
+  <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Discover Uganda</h1>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#places">Places</a>
+        <a href="#weather">Weather</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO using responsive srcset with JPG images -->
+  <section class="hero">
+    <picture>
+      <img src="images/hero-small.webp" alt="Lush hill landscape in Uganda" loading="eager">
+    </picture>
+    <div class="hero-text wrap">
+      <h2>Uganda — The Pearl of Africa</h2>
+      <p>Explore vibrant culture, diverse wildlife, and breathtaking landscapes.</p>
+    </div>
+  </section>
+  <main class="wrap main-grid">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>Uganda is landlocked in East Africa, famous for its mountains, lakes, and wildlife. Visitors enjoy
+        safaris, cultural experiences, and mountain trekking.</p>
+    </section>
+
+
+    <section id="places" class="card">
+      <h2>Top places to visit</h2>
+      <ul>
+        <li><strong>Murchison Falls</strong> — dramatic waterfalls and wildlife.</li>
+        <li><strong>Kampala</strong> — the lively capital with markets and culture.</li>
+        <li><strong>Bwindi</strong> — gorilla trekking in ancient forests.</li>
+        <li><strong>Sipi Falls</strong>-for beautiful sceneries and mountain hiking</li>
+      </ul>
+    </section>
+
+
+    <aside id="weather" class="card weather">
+      <h2>Weather</h2>
+
+      <div class="weather-top">
+        <div class="weather-icon-mobile">
+          <img src="images/weather-icon.jpg" alt="Cloud and sun icon" aria-hidden="true">
+        </div>
+        <div class="weather-data">
+          <p>Temperature: <span id="temp">22</span> °C</p>
+          <p>Wind speed: <span id="wind">15</span> km/h</p>
+          <p>Wind chill: <span id="windchill">--</span></p>
+        </div>
+      </div>
+
+
+      <p class="weather-note">Forecast is static for this example.</p>
+    </aside>
+
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>If you plan a trip or have questions, contact the local tourism board.</p>
+    </section>
+  </main>
+
+
+  <footer class="site-footer wrap">
+    <p>&copy; <span id="2025"></span> Last modified: <span id="lastmodified"></span></p>
+  </footer>
+</body>
+
+</html>

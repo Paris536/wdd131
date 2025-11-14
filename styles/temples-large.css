@@ -1,0 +1,11 @@
+@media screen and (min-width: 32rem) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

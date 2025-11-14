@@ -1,0 +1,57 @@
+/* Mobile-first styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: none; /* Hidden by default for hamburger */
+  flex-direction: column;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+#hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
