@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Review Submitted</title>
+<title>CleanWave Soap Company</title>
 <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <h1>Thank You for Your Review!</h1>
+        <h1>CleanWave Soap Company</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,9 +21,14 @@
 
     <main>
         <section>
-            <p>Your review has been successfully submitted.</p>
-            <p>Total reviews submitted: <span id="reviewCounter">0</span></p>
-            <a href="form.html">Submit Another Review</a>
+            <h2>About Us</h2>
+            <p>CleanWave Soap Company produces eco-friendly soaps and personal care products that are safe for people and the environment.</p>
+            <img src="images/soap.jpg" alt="CleanWave Soap" loading="lazy">
+        </section>
+
+        <section>
+            <h2>Featured Products</h2>
+            <div id="productList"></div>
         </section>
     </main>
 
@@ -31,16 +36,6 @@
         <p>&copy; 2025 CleanWave Soap Company | <a href="references.html">References</a></p>
     </footer>
 
-    <script>
-        // Increment review counter in localStorage
-        let reviewCount = localStorage.getItem("reviewCount");
-        reviewCount = reviewCount ? parseInt(reviewCount) : 0;
-        reviewCount++;
-        localStorage.setItem("reviewCount", reviewCount);
-
-        // Display the count on the page
-        document.getElementById("reviewCounter").textContent = reviewCount;
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
-
